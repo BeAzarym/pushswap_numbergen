@@ -7,7 +7,8 @@ def generate_random_list(length, min, max):
 
 if __name__ == '__main__':
 	if len(sys.argv) != 4:
-		print("Usage : python3 pushswap_gen.py <length> <min> <max>")
+		print("Usage 	: python3 pushswap_gen.py <length> <min> <max>")
+		print("Example	: python3 pushswap_gen.py 10 -10 10")
 		sys.exit(1)
 	length = int(sys.argv[1])
 	min = int(sys.argv[2])
