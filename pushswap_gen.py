@@ -1,14 +1,16 @@
 import sys
 import random
 
-def generate_random_list(length):
-	random_list = random.sample(range(-length**2, length**2), length)
+def generate_random_list(length, min, max):
+	random_list = random.sample(range(min, max), length)
 	return random_list
 
 if __name__ == '__main__':
-	if len(sys.argv) != 2:
-		print("Usage : python3 pushswap_gen.py <length>")
+	if len(sys.argv) != 4:
+		print("Usage : python3 pushswap_gen.py <length> <min> <max>")
 		sys.exit(1)
 	length = int(sys.argv[1])
-	random_list = generate_random_list(length)
+	min = int(sys.argv[2])
+	max = int(sys.argv[3])
+	random_list = generate_random_list(length, min, max)
 	print("Just generate", length,"random number\n",random_list)
