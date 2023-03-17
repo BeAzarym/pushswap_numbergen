@@ -14,4 +14,5 @@ if __name__ == '__main__':
 	min = int(sys.argv[2])
 	max = int(sys.argv[3])
 	random_list = generate_random_list(length, min, max)
-	print("Just generate", length,"random number\n",random_list)
+	random_list_str = ' '.join(str(num) for num in random_list)
+	print("Liste aléatoire : ", random_list_str)
