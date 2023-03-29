@@ -15,4 +15,4 @@ if __name__ == '__main__':
 	max = int(sys.argv[3])
 	random_list = generate_random_list(length, min, max)
 	random_list_str = ' '.join(str(num) for num in random_list)
-	print("Liste aléatoire : ", random_list_str)
+	print(random_list_str)
